@@ -78,6 +78,61 @@ for(let[key, value]of object.entries(formdata)){
         clearError();
     }
 }
+
+// send the data to php file
+
+let JSONdata = JSON.stringify(formdata);
+//Need XLHTP requestto send the data to the server
+ let http = new XMLHttpRequest();
+ 
+ // open method
+ http.open('post', "form.php", true);
+
+ //the data is send as key => value pairs " */
+
+ http.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+
+ //send the request, disable the submit button,and showing the please wait message */
+
+ http.send('message=' + JSONdata);
+	disableButton();
+
+    //catch the servers response.
+	/* run the onreadystatechange event-handler. */
+
+    http.onreadystatechange = function(){
+		/* then  check the readyState and status properties. */
+		if(this.readyState == 4 && this.status == 200){
+			/* if the request was successful,catch the response with the
+			responseText property. */
+			let response = this.responseText;
+
+            //check now the incoming messages */
+
+            if(response.indexOf("Error") != -1){
+				/* If the message is an error, we display it. */
+				error.style.display = "block";
+				error.innerHTML = response;
+
+                enableButton();
+			}else{
+                /* If the response is the success message,  clear any error.  */
+				clearError();
+                
+				success.style.display = "block";
+				success.innerHTML = response;
+				/*last i clear the contact form */
+				clearForm();
+			}
+		};
+	}
+
+
+
+
+
+
+
 });
 
 
