@@ -327,6 +327,27 @@ body {
   background-color: rgb(33, 181, 218);
 }
 
+.error {
+  color: #a71f1f;
+  margin: top 20px;
+  background-color: #fde3e8;
+  padding: 10px;
+  display: none;
+}
+
+.success {
+  color: #086508;
+  background-color: #c9fdc9;
+  padding: 10px;
+  display: none;
+}
+
+.please_wait {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
 .formbold--mx-3 {
   margin-left: -12px;
   margin-right: -12px;
