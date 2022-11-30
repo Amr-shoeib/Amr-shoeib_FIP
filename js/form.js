@@ -54,7 +54,7 @@ function clearFor(){
 
 form.addEventListener("submit", function(){
 e.preventDefault();
-});
+
 
 // object to hold the fields names and values and send the object to php file
 
@@ -72,9 +72,12 @@ for(let[key, value]of object.entries(formdata)){
     if(value === ""){
         // empty data desplay an error message and stop the function
         error.style.display = "block";
-        error.innerHTML = ""
+        error.innerHTML = "All fildes are required";
+        return false;
+        }else{
+        clearError();
     }
 }
-
+});
 
 
