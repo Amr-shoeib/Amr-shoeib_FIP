@@ -1,0 +1,40 @@
+{
+    "Lead branding": {
+        "name": "Lead branding",
+        "id": "lead",
+        "project_bg": "lead_branding.jpg",
+        "project_profile": "project1.jpg",
+        "project_desc": "the lead branding project visuals show the values of the company. I used the icons to create visuals that reflect this value "
+    },
+
+    "Nescafe": {
+        "name": "Nescafe branding",
+        "id": "Nescafe",
+        "project_bg": "nescafe_bg.jpg",
+        "project_profile": "project2.jpg",
+        "project_desc": "In Nescafe branding, I used cups with the Nescafe icon for the backdrop "},
+
+         "movie poster": {
+        "name": "changing sands movie poster",
+        "id": "popster",
+        "project_bg": "poster_bg.jpg",
+        "project_profile": "project3.jpg",
+        "project_desc": "The poster shows the history of Dubai between the past and the present I used warm colors to be matching with the desert. "},
+
+         "ceci Advertising": {
+        "name": "ceci Advertising campaign ",
+        "id": "Ceci",
+        "project_bg": "ceci_ad.jpg",
+        "project_profile": "project5.jpg",
+        "project_desc": "The idea of the advertisement was based on the logo icon I used a peacock feather for the logo icon then I used the peacock itself to connect with the products "},
+
+         "pyramedia": {
+        "name": "pyramedia typography campaign",
+        "id": "pyramedia",
+        "project_bg": "pyra_bg.jpg",
+        "project_profile": "project4.jpg",
+        "project_desc": "Pyramedia typography campaign shows the servieces that the compant can provide. The typography visuals was based on the company values "}
+        
+
+  }
+
