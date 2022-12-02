@@ -236,6 +236,7 @@ main#home h1 {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
 }
 .projects img {
   width: 100%;

@@ -126,6 +126,7 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
 
   img {
     width: 100%;
@@ -138,6 +139,23 @@ main {
     }
   }
 }
+
+// lightbox
+
+// .portfolio-lightboxs{
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 33vh;
+//   height: 33vh;
+//   background: rgba(0,0,0,.5);
+// }
+
+
+
+
+
 
 
 
